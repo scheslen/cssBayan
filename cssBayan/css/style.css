@@ -58,6 +58,74 @@
      wrap: wrap;
  }
 
+ main {
+ } 
  h1{
-    margin: 10px auto;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem auto;
  }
+
+.bayan{
+    width: 70%;
+    max-width: 800px;
+    margin: 2rem auto;
+    cursor: pointer;
+    background-color: #d6f8f2;
+    color: #060;
+    text-align: left;
+}
+
+
+.bayan-item{
+ /*   background-color: #48a77c;
+    color: #060;*/
+}
+
+.bayan-item-head{
+  padding: 0.5rem 2rem ;
+  min-height: 3.25rem;
+  line-height: 1.25rem;
+
+}
+
+.item-ico{
+    max-width: 30px;
+    transition: transform 0.5s easy-in-out ;
+
+}
+.item-ico:hover {
+    transform: rotate(45deg);
+}
+
+.bayan-item-body{
+    display: none;
+    padding: 1rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right,transparent, #060, transparent) 1;
+    transition: all 0.5s;
+}
+
+.bayan-item-head:hover + .bayan-item-body{
+    display: block;
+}
+
+.item-img{
+  margin: 0 40%;
+  max-width: 100px;
+}
+
+
+/**********************************************************************/
+@media (max-width: 820px) {
+body{
+    font-size: 80%;
+}
+
+}
+@media (max-width: 320px) {
+body{
+    font-size: 60%;
+}
+
+}
