@@ -91,6 +91,7 @@
 
 .item-ico{
     max-width: 30px;
+    filter:invert(47%) sepia(81%) saturate(479%) hue-rotate(53deg) brightness(90%) contrast(89%);
     transition: transform 0.5s easy-in-out ;
 
 }
@@ -111,8 +112,8 @@
 }
 
 .item-img{
-  margin: 0 40%;
-  max-width: 100px;
+  margin: 0 30%;
+  max-width: 50%;
 }
 
 
