@@ -48,7 +48,7 @@ img {
 }
 
 .bayan-item-head{
-    border-top: 1px solid;
+    border-top: 0.1rem solid;
     border-image: linear-gradient(to right,transparent, #060, transparent) 1;
     color: #060;
     opacity: 0.4;
@@ -65,21 +65,23 @@ img {
 
 .item-ico{
     opacity: 0;
-    max-width: 30px;
+    max-width: 2rem;
     filter:invert(47%) sepia(81%) saturate(479%) hue-rotate(53deg) brightness(90%) contrast(89%);
     transition: transform 0.5s  ease-in-out ;
 }
 
 .bayan-item-body{
-    display: none;
-    padding: 1rem;
-    transition: all 0.5s  ease-in-out;
+   /*  display: none;
+   padding: 1rem;*/
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s  ease-in-out;
     cursor: pointer;
 }
 
 .item-img{
   margin: 0 30%;
-  max-width: 50%;
+  width: 50%;
   transition: all 0.5s  ease-in-out 0.2s;
 }
 .item-img:hover{
@@ -101,7 +103,8 @@ footer{
 }
 
 .bayan-item-row:hover .bayan-item-body{
-  display: block;
+ /* display: block;*/
+   max-height: 1000rem;
 }
 
 .bayan-item-row:hover .bayan-item-body .item-img{
@@ -111,7 +114,8 @@ footer{
    transform: rotate(45deg);
 }
 .item-radio:checked + .bayan-item-row .bayan-item-body{
-  display: block;
+ /* display: block;*/
+  max-height: 1000rem;
 }
 .item-radio:checked + .bayan-item-row .bayan-item-body .item-img{
    width: 50%;
