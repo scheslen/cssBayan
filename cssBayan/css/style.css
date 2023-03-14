@@ -78,15 +78,16 @@ img {
 }
 
 .item-img{
-  margin: 0 35%;
+  margin: 0 30%;
   max-width: 50%;
+  transition: all 0.5s  ease-in-out 0.2s;
 }
 .item-img:hover{
   opacity: 0.7;
 }
 
 footer{
-  padding: 1rem;
+  padding: 2rem;
   color: #060;
   font-size: 1rem;
 }
@@ -100,22 +101,28 @@ footer{
 }
 
 .bayan-item-row:hover .bayan-item-body{
-    display: block;
+  display: block;
 }
 
+.bayan-item-row:hover .bayan-item-body .item-img{
+  width: 35%;
+}
 .bayan-item:hover  .item-ico{
-    transform: rotate(45deg);
+   transform: rotate(45deg);
 }
 .item-radio:checked + .bayan-item-row .bayan-item-body{
   display: block;
 }
+.item-radio:checked + .bayan-item-row .bayan-item-body .item-img{
+   width: 50%;
+}
+
 .item-radio:checked + .bayan-item-row .bayan-item-head{
   opacity: 1;
 }
 .item-radio:checked + .bayan-item-row .bayan-item-head .item-ico{
   transform: rotate(45deg);
 }
-
 
 .item-radio:active + .bayan-item-row .bayan-item-body{
    opacity: 0.5;
@@ -125,6 +132,13 @@ footer{
 }
 
 /***********************************************************/
+
+@media (hover: none) {
+ .item-ico{
+  visibility: hidden;
+ }
+}
+
 @media (max-width: 820px) {
   body{
       font-size: 85%;
@@ -136,6 +150,7 @@ footer{
     width: 70%;
   }
 }
+
   @media (max-width: 320px) {
   body{
       font-size: 70%;
